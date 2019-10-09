@@ -47,8 +47,8 @@ predict.spca<-function(model,input,num_components){
   
   input<-data.frame(predict(pca_matrix,data))
   
-  if(num_components<ncol(inputs)){
-    inputs=inputs[,1:num_components]
+  if(num_components<ncol(input)){
+    input=input[,1:num_components]
   }
   
   
